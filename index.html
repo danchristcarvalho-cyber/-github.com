@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Inteligente: Governança Bíblica Pro</title>
+    <style>
+        :root {
+            --primary: #2ecc71;
+            --primary-dark: #27ae60;
+            --dark: #2c3e50;
+            --light: #f8fafc;
+            --text: #334155;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .badge {
+            background-color: #e2fbeb;
+            color: var(--primary-dark);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        h1 {
+            color: var(--dark);
+            font-size: 2.5rem;
+            margin: 0 0 15px 0;
+            font-weight: 800;
+        }
+        .lead {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Simulador Interativo Real */
+        .simulator-box {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 50px;
+        }
+        .simulator-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .simulator-header h2 {
+            margin: 0;
+            color: var(--dark);
+            font-size: 1.6rem;
+        }
+        .grid-inputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        input, select {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input:focus, select:focus {
+            border-color: var(--primary);
+        }
+        .btn-calc {
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+        .btn-calc:hover {
+            background-color: #1a252f;
+        }
+        
+        /* Janela de Resposta */
+        .output-box {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f1f5f9;
+            border-left: 5px solid #cbd5e1;
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .output-box.success {
+            background-color: #f0fdf4;
+            border-left-color: var(--primary);
+            color: #166534;
+        }
+        .output-box.alert {
+            background-color: #fff7ed;
+            border-left-color: #f97316;
+            color: #9a3412;
+        }
+        .output-box.danger {
+            background-color: #fef2f2;
+            border-left-color: #ef4444;
+            color: #991b1b;
+        }
+        .output-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 1.05rem;
+        }
+        .output-text {
+            font-size: 0.95rem;
+            white-space: pre-line;
+        }
+
+        .cta-section {
+            background: var(--dark);
+            color: white;
+            padding: 50px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(44, 62, 80, 0.15);
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin: 0 0 15px 0;
+        }
+        .cta-section p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        .btn-buy {
+            background-color: var(--primary);
+            color: white;
+            padding: 16px 36px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+        }
+        .btn-buy:hover {
+            background-color: var(--primary-dark);
+        }
+        .guarantee {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="badge">Demonstração Interativa</span>
+            <h1>Governança Bíblica Pro</h1>
+            <p class="lead">Experimente em tempo real um dos motores da aplicação rodando nativamente no seu navegador.</p>
+        </header>
+
+        <!-- Formulação Interativa Real (Módulo 6: Sabático e Produtividade) -->
+        <div class="simulator-box">
+            <div class="simulator-header">
+                <h2>🎯 Simulador de Descanso Estratégico e Perda Cognitiva</h2>
+                <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Princípio de Êxodo 20:9-10 aplicado à economia comportamental moderna.</p>
+            </div>
+            
+            <div class="grid-inputs">
+                <div class="input-group">
+                    <label for="dias">Dias trabalhados por semana</label>
+                    <select id="dias">
+                        <option value="5">5 dias (Foco comum)</option>
+                        <option value="6">6 dias (Resta 1 de descanso)</option>
+                        <option value="7" selected>7 dias (Sem pausas / Overworking)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="faturamento">Faturamento Mensal Atual (R\$)</label>
+                    <input type="number" id="faturamento" value="30000" placeholder="Ex: 20000">
+                </div>
+            </div>
+
+            <button class="btn-calc" onclick="calcularSabatico()">Rodar Análise de Integridade</button>
+
+            <!-- Janela de Resultado Inteligente -->
+            <div id="output" class="output-box">
+                <div id="output-title" class="output-title"></div>
+                <div id="output-text" class="output-text"></div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Gostou da velocidade e precisão?</h2>
+            <p>Este é apenas 1 dos 6 micro-serviços nativos inclusos no pacote. Garanta o código-fonte limpo sem assinaturas ou mensalidades.</p>
+            <a href="SEU_LINK_DE_CHECKOUT_DA_KIWIFY" class="btn-buy">Quero o Sistema de Governança + Bônus</a>
+            <div class="guarantee">🛡️ Pagamento seguro via Kiwify • Instalação com 1-Clique na Vercel</div>
+        </div>
+    </div>
+
+    <script>
+        function calcularSabatico() {
+            const dias = parseInt(document.getElementById('dias').value);
+            const fat = parseFloat(document.getElementById('faturamento').value) || 0;
+            const output = document.getElementById('output');
+            const outTitle = document.getElementById('output-title');
+            const outText = document.getElementById('output-text');
+            
+            output.className = 'output-box'; // reset classes
+            output.style.display = 'block';
+
+            if (fat <= 0) {
+                output.classList.add('alert');
+                outTitle.innerText = "⚠️ Dados Inválidos";
+                outText.innerText = "Por favor, insira um valor de faturamento maior do que zero para simular.";
+                return;
+            }
+
+            if (dias >= 7) {
+                output.classList.add('danger');
+                const perda = (fat * 0.20).toFixed(2);
+                outTitle.innerText = "🚨 Alerta de Violação de Princípio (Overworking)";
+                outText.innerText = `Você trabalha 7 dias por semana sem pausas estratégicas. 
+
+A exaustão física e mental reduz sua capacidade analítica. Matematicamente, decisões ruins por cansaço estão fazendo você deixar aproximadamente R$ ${perda} na mesa todos os meses. 
+
+Recomendação: Implemente o descanso integral de 1 dia na sua cultura operacional.`;
+            } else {
+                output.classList.add('success');
+                outTitle.innerText = "✅ Ritmo de Produtividade Correto e Sustentável";
+                outText.innerText = `Parabéns. Sua rotina de trabalho respeita o tempo necessário de regeneração biológica e cognitiva. 
+
+Sua margem de clareza mental para fechar grandes contratos e evitar prejuízos está operando na capacidade ideal.`;
+            }
+        }
+    </script>
+</body>
+</html>

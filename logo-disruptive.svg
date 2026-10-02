@@ -1,0 +1,48 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgDark" x1="60" y1="40" x2="420" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020917"/>
+      <stop offset="0.5" stop-color="#0B1630"/>
+      <stop offset="1" stop-color="#040B15"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="120" y1="80" x2="360" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AF3D8"/>
+      <stop offset="0.28" stop-color="#2DD4BF"/>
+      <stop offset="0.66" stop-color="#5EA5FF"/>
+      <stop offset="1" stop-color="#E9C76D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="170" y1="110" x2="330" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6CF"/>
+      <stop offset="0.35" stop-color="#E0C86A"/>
+      <stop offset="0.72" stop-color="#C08D2B"/>
+      <stop offset="1" stop-color="#8D6517"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="470" y1="115" x2="1210" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FAFB"/>
+      <stop offset="0.22" stop-color="#D9E7FF"/>
+      <stop offset="0.54" stop-color="#A9F7D0"/>
+      <stop offset="1" stop-color="#F0D98F"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#2DD4BF" flood-opacity="0.22"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#E9C76D" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="500" fill="#F5F3EE"/>
+
+  <g filter="url(#glow)">
+    <rect x="58" y="70" width="340" height="340" rx="82" fill="url(#bgDark)"/>
+    <path d="M155 148H295C325.928 148 351 173.072 351 204V254C351 284.928 325.928 310 295 310H247V350H200V310H155C124.072 310 99 284.928 99 254V204C99 173.072 124.072 148 155 148ZM155 187C146.163 187 139 194.163 139 203V254C139 262.837 146.163 270 155 270H295C303.837 270 311 262.837 311 254V203C311 194.163 303.837 187 295 187H155ZM200 199H295V228H200V199ZM200 246H273V276H200V246Z" fill="url(#neon)"/>
+    <path d="M180 166H293C319.51 166 341 187.49 341 214V244C341 270.51 319.51 292 293 292H246V332H198V292H180C153.49 292 132 270.51 132 244V214C132 187.49 153.49 166 180 166ZM180 203C171.163 203 164 210.163 164 219V244C164 252.837 171.163 260 180 260H246V203H180ZM246 203V260H293C301.837 260 309 252.837 309 244V219C309 210.163 301.837 203 293 203H246Z" fill="url(#gold)" opacity="0.95"/>
+    <path d="M257 335L300 366L257 397" stroke="#F9EDB1" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M294 335L337 366L294 397" stroke="#98F3DA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <text x="480" y="220" fill="url(#textGrad)" font-family="Segoe UI, Arial, sans-serif" font-size="98" font-weight="800" letter-spacing="4">GOVERNANÇA</text>
+    <text x="487" y="300" fill="#0A1420" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="16">PRO</text>
+    <line x1="485" y1="332" x2="1215" y2="332" stroke="#C9932A" stroke-width="3"/>
+    <text x="486" y="382" fill="#4B5868" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="10">DECISÕES QUE MUDAM O FUTURO</text>
+  </g>
+</svg>

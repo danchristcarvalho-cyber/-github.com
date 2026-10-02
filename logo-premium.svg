@@ -1,0 +1,48 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="70" y1="45" x2="390" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091620"/>
+      <stop offset="0.45" stop-color="#0F2233"/>
+      <stop offset="1" stop-color="#040C14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="70" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8D79A"/>
+      <stop offset="0.25" stop-color="#C9A74A"/>
+      <stop offset="0.6" stop-color="#6AE3CF"/>
+      <stop offset="1" stop-color="#86A6FF"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="160" y1="130" x2="314" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F7FA"/>
+      <stop offset="0.5" stop-color="#D9E5F0"/>
+      <stop offset="1" stop-color="#A7B7C9"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="500" y1="70" x2="1210" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF3F8"/>
+      <stop offset="0.3" stop-color="#D9C98A"/>
+      <stop offset="0.64" stop-color="#A4E9DB"/>
+      <stop offset="1" stop-color="#E5D5A0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020915" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="500" fill="#F9F7F3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="62" y="70" width="336" height="336" rx="82" fill="url(#panel)"/>
+    <rect x="62" y="70" width="336" height="336" rx="82" stroke="rgba(201,167,74,0.7)" stroke-width="1.5"/>
+
+    <path d="M160 146H270C300.928 146 326 171.072 326 202V266C326 296.928 300.928 322 270 322H226V352H178V322H160C129.072 322 104 296.928 104 266V202C104 171.072 129.072 146 160 146ZM160 186C150.059 186 142 194.059 142 204V266C142 275.941 150.059 284 160 284H270C279.941 284 288 275.941 288 266V204C288 194.059 279.941 186 270 186H160ZM214 206H270V236H214V206ZM214 256H272V286H214V256Z" fill="url(#accent)"/>
+    <path d="M188 164H268C290.091 164 308 181.909 308 204V222C308 244.091 290.091 262 268 262H232V298H188V262H188C165.909 262 148 244.091 148 222V204C148 181.909 165.909 164 188 164ZM188 198C178.059 198 170 206.059 170 216V222C170 231.941 178.059 240 188 240H232V198H188ZM232 198V240H268C277.941 240 286 231.941 286 222V216C286 206.059 277.941 198 268 198H232Z" fill="url(#steel)" opacity="0.96"/>
+    <path d="M247 326L288 360L247 394" stroke="#F6E8B7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M290 326L331 360L290 394" stroke="#7FE4D0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <text x="470" y="214" fill="url(#wordmark)" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700" letter-spacing="2.5">GOVERNANÇA</text>
+    <text x="475" y="290" fill="#0A1523" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="14">PRO</text>
+    <line x1="476" y1="324" x2="1198" y2="324" stroke="#C79D38" stroke-width="2.5"/>
+    <text x="476" y="370" fill="#495D71" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="8">DECISÕES COM PROPÓSITO</text>
+  </g>
+</svg>

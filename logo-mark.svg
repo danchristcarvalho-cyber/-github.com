@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGlow" x1="70" y1="50" x2="420" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#132A43"/>
+      <stop offset="1" stop-color="#07111E"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="120" y1="88" x2="404" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="0.45" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="170" y1="130" x2="326" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8E7A0"/>
+      <stop offset="0.55" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#B88919"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="64" fill="#F8FAFC"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="72" width="384" height="384" rx="88" fill="url(#bgGlow)"/>
+    <path d="M196 124H316C353.555 124 384 154.445 384 192V286C384 323.555 353.555 354 316 354H266V394H234V354H196C158.445 354 128 323.555 128 286V192C128 154.445 158.445 124 196 124ZM196 160C176.118 160 160 176.118 160 196V286C160 305.882 176.118 322 196 322H316C335.882 322 352 305.882 352 286V196C352 176.118 335.882 160 316 160H196ZM242 196H316V224H242V196ZM242 256H314V284H242V256Z" fill="url(#brand)"/>
+    <path d="M224 158H310C336.51 158 358 179.49 358 206V248C358 274.51 336.51 296 310 296H256V334H224V296H224C197.49 296 176 274.51 176 248V206C176 179.49 197.49 158 224 158ZM224 190C208.536 190 196 202.536 196 218V248C196 263.464 208.536 276 224 276H256V190H224ZM256 190V276H310C325.464 276 338 263.464 338 248V218C338 202.536 325.464 190 310 190H256Z" fill="url(#gold)" opacity="0.95"/>
+    <circle cx="315" cy="378" r="26" fill="#F8E7A0"/>
+    <path d="M307 366L322 378L307 390" stroke="#0F172A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

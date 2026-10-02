@@ -1,0 +1,44 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGlow" x1="40" y1="30" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#11243D"/>
+      <stop offset="1" stop-color="#0A1220"/>
+    </linearGradient>
+    <linearGradient id="tealGold" x1="80" y1="32" x2="240" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="0.45" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="116" y1="72" x2="214" y2="234" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8E7A0"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#B88919"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="330" y1="90" x2="980" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF7FF"/>
+      <stop offset="0.5" stop-color="#C7D2FE"/>
+      <stop offset="1" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="#F8FAFC"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="44" y="52" width="246" height="246" rx="54" fill="url(#bgGlow)"/>
+    <path d="M126 84H214C234.987 84 252 101.013 252 122V190C252 210.987 234.987 228 214 228H175V250H154V228H126C105.013 228 88 210.987 88 190V122C88 101.013 105.013 84 126 84ZM126 103C115.507 103 107 111.507 107 122V190C107 200.493 115.507 209 126 209H214C224.493 209 233 200.493 233 190V122C233 111.507 224.493 103 214 103H126ZM160 122H214V145H160V122ZM160 164H213V188H160V164Z" fill="url(#tealGold)"/>
+    <path d="M145 106L202 106C222.987 106 240 123.013 240 144V164C240 184.987 222.987 202 202 202H171V226H150V202H145C124.013 202 107 184.987 107 164V144C107 123.013 124.013 106 145 106ZM145 126C133.954 126 125 134.954 125 146V164C125 175.046 133.954 184 145 184H171V126H145ZM171 126V184H202C213.046 184 222 175.046 222 164V146C222 134.954 213.046 126 202 126H171Z" fill="url(#gold)" opacity="0.9"/>
+    <circle cx="196" cy="244" r="18" fill="#F8E7A0" opacity="0.9"/>
+    <path d="M191 236L201 244L191 252" stroke="#0F172A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <text x="330" y="180" fill="url(#textGrad)" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" letter-spacing="2">GOVERNANÇA</text>
+    <text x="335" y="246" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="8">PRO</text>
+    <line x1="335" y1="270" x2="720" y2="270" stroke="#C9B46A" stroke-width="2"/>
+    <text x="335" y="310" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="500" letter-spacing="6">BIBLICAL GOVERNANCE</text>
+  </g>
+</svg>

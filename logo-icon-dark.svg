@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="48" y1="36" x2="452" y2="468" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#060E1A"/>
+      <stop offset="0.48" stop-color="#0D1828"/>
+      <stop offset="1" stop-color="#020812"/>
+    </linearGradient>
+    <linearGradient id="tealGold" x1="96" y1="72" x2="410" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFFBF3"/>
+      <stop offset="0.2" stop-color="#7EE7D7"/>
+      <stop offset="0.58" stop-color="#2FD0BB"/>
+      <stop offset="1" stop-color="#D3A63B"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="150" y1="120" x2="320" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7D1"/>
+      <stop offset="0.28" stop-color="#EBCF72"/>
+      <stop offset="0.7" stop-color="#C8982A"/>
+      <stop offset="1" stop-color="#8A6518"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#010610" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="88" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M172 128H286C327.421 128 360 160.579 360 202V266C360 307.421 327.421 340 286 340H236V392H176V340H172C130.579 340 98 307.421 98 266V202C98 160.579 130.579 128 172 128ZM172 168C150.461 168 133 185.461 133 207V266C133 287.539 150.461 305 172 305H286C307.539 305 325 287.539 325 266V207C325 185.461 307.539 168 286 168H172ZM214 202H286V235H214V202ZM214 262H279V295H214V262Z" fill="url(#tealGold)"/>
+    <path d="M194 156H284C312.719 156 336 179.281 336 208V240C336 268.719 312.719 292 284 292H236V334H194V292H194C165.281 292 142 268.719 142 240V208C142 179.281 165.281 156 194 156ZM194 192C181.909 192 172 201.909 172 214V240C172 252.091 181.909 262 194 262H236V192H194ZM236 192V262H284C296.091 262 306 252.091 306 240V214C306 201.909 296.091 192 284 192H236Z" fill="url(#gold)" opacity="0.96"/>
+    <circle cx="294" cy="360" r="24" fill="#F7E9A8"/>
+    <path d="M285 345L306 360L285 375" stroke="#06131F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

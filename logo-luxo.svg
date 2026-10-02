@@ -1,0 +1,58 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="luxBg" x1="40" y1="30" x2="320" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070E1A"/>
+      <stop offset="0.48" stop-color="#0D1B2A"/>
+      <stop offset="1" stop-color="#020812"/>
+    </linearGradient>
+    <linearGradient id="luxTeal" x1="90" y1="80" x2="290" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7F9F2"/>
+      <stop offset="0.2" stop-color="#7DE7D6"/>
+      <stop offset="0.55" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#C9A74A"/>
+    </linearGradient>
+    <linearGradient id="luxGold" x1="130" y1="115" x2="260" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4C7"/>
+      <stop offset="0.32" stop-color="#E8D17A"/>
+      <stop offset="0.68" stop-color="#C89B2F"/>
+      <stop offset="1" stop-color="#8F6A1F"/>
+    </linearGradient>
+    <linearGradient id="luxText" x1="360" y1="90" x2="1080" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F3ED"/>
+      <stop offset="0.25" stop-color="#E5D5A8"/>
+      <stop offset="0.6" stop-color="#CDAA52"/>
+      <stop offset="1" stop-color="#86F0D8"/>
+    </linearGradient>
+    <filter id="luxShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#010915" flood-opacity="0.42"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="420" fill="#F7F4EE"/>
+
+  <g filter="url(#luxShadow)">
+    <rect x="52" y="52" width="300" height="300" rx="72" fill="url(#luxBg)"/>
+    <rect x="52" y="52" width="300" height="300" rx="72" stroke="rgba(201,167,74,0.55)" stroke-width="1.5"/>
+
+    <g filter="url(#softGlow)">
+      <path d="M152 116H258C285.614 116 308 138.386 308 166V234C308 261.614 285.614 284 258 284H224V320H188V284H152C124.386 284 102 261.614 102 234V166C102 138.386 124.386 116 152 116ZM152 150C138.745 150 128 160.745 128 174V234C128 247.255 138.745 258 152 258H258C271.255 258 282 247.255 282 234V174C282 160.745 271.255 150 258 150H152ZM196 174H258V202H196V174ZM196 226H255V254H196V226Z" fill="url(#luxTeal)"/>
+      <path d="M177 156H255C276.539 156 294 173.461 294 195V220C294 241.539 276.539 259 255 259H222V292H177V259H177C155.461 259 138 241.539 138 220V195C138 173.461 155.461 156 177 156ZM177 187C168.163 187 161 194.163 161 203V220C161 228.837 168.163 236 177 236H222V187H177ZM222 187V236H255C263.837 236 271 228.837 271 220V203C271 194.163 263.837 187 255 187H222Z" fill="url(#luxGold)" opacity="0.94"/>
+      <circle cx="260" cy="292" r="22" fill="#F3E7B4"/>
+      <path d="M252 280L270 292L252 304" stroke="#0B1220" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <g>
+    <text x="420" y="194" fill="url(#luxText)" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" letter-spacing="2.5">GOVERNANÇA</text>
+    <text x="427" y="264" fill="#0B1220" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="14">PRO</text>
+    <line x1="426" y1="289" x2="1060" y2="289" stroke="#C69C36" stroke-width="2.5"/>
+    <text x="428" y="332" fill="#495867" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="8">BIBLICAL GOVERNANCE</text>
+  </g>
+</svg>
